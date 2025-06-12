@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap");
+.container {
+  max-width: 85% !important;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -4296,7 +4299,7 @@ Location:
   position: relative;
   padding: 50px 20px;
   border-radius: 8px;
-  max-height: 440px;
+  min-height: 34.4rem;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -6432,11 +6435,10 @@ Location:
   color: var(--ztc-text-text-1);
 }
 .hero1-section-area .header-images-area {
-  position: relative;
+  /* position: relative; */
 }
 .hero1-section-area .header-images-area .main-images-area {
   position: relative;
-  left: 100px;
 }
 @media (max-width: 767px) {
   .hero1-section-area .header-images-area .main-images-area {
@@ -6455,7 +6457,7 @@ Location:
 }
 .hero1-section-area .header-images-area .main-images-area .img1 {
   position: relative;
-  left: 60px;
+  /* left: 60px; */
   z-index: 1;
 }
 @media (max-width: 767px) {
@@ -6464,8 +6466,8 @@ Location:
   }
 }
 .hero1-section-area .header-images-area .main-images-area .img1 img {
-  height: 720.01px;
-  width: 486.95px;
+  /* height: 720.01px; */
+
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -6473,7 +6475,6 @@ Location:
   .hero1-section-area .header-images-area .main-images-area .img1 img {
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -27667,7 +27668,7 @@ html {
   }
 }
 .testimonial1-section-area .testimonials-slider-area.owl-carousel .owl-stage-outer {
-  overflow: inherit !important;
+  overflow: clip !important;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea {
   position: relative;
@@ -27821,7 +27822,7 @@ html {
   }
 }
 .testimonial1-section-area .testimonials-slider-area.owl-carousel .owl-stage-outer {
-  overflow: inherit !important;
+  overflow: clip !important;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea {
   position: relative;
@@ -29029,7 +29030,7 @@ html {
   }
 }
 .testimonial1-section-area .testimonials-slider-area.owl-carousel .owl-stage-outer {
-  overflow: inherit !important;
+  overflow: clip !important;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea {
   position: relative;

@@ -248,7 +248,7 @@ $('.testimonials-slider-area').owlCarousel({
   nav:false,
   dots:true,
   items:10,
-  autoplay:true,
+  autoplay:false,
   smartSpeed:3000,
   autoplayTimeout:4000,
   responsiveClass:true,
@@ -261,7 +261,10 @@ $('.testimonials-slider-area').owlCarousel({
           items:2,
       },
       1000:{
-          items:1,
+          items:2,
+      },
+      1600:{
+          items:3,
       }
   }
 });
