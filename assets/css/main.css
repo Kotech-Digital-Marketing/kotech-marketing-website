@@ -4500,7 +4500,7 @@ Location:
   text-align: right;
   margin-bottom: 8px;
 }
-.service2-section-area .service-all-boxes .service2-auhtor-boxarea .arrow a {
+.service2-section-area .service-all-boxes .service2-auhtor-boxarea .arrow P {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -4560,7 +4560,7 @@ Location:
   margin-bottom: 8px;
   transition: all 0.4s;
 }
-.service2-section-area .service-all-boxes .service2-auhtor2-boxarea .arrow a {
+.service2-section-area .service-all-boxes .service2-auhtor2-boxarea .arrow p {
   display: inline-block;
   height: 40px;
   width: 40px;
