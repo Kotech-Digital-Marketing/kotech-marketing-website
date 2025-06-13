@@ -4417,7 +4417,7 @@ Location:
     padding: 0;
   }
 }
-.service2-section-area .images-content-area .content-area h5 {
+.service2-section-area .images-content-area .content-area p {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s16);
   line-height: var(--ztc-font-size-font-s16);
@@ -4426,7 +4426,7 @@ Location:
   margin-bottom: 16px;
 }
 @media (max-width: 767px) {
-  .service2-section-area .images-content-area .content-area h5 {
+  .service2-section-area .images-content-area .content-area p {
     color: var(--ztc-text-text-2);
   }
 }
@@ -24272,7 +24272,7 @@ html {
   text-align: center;
   margin-top: 20px;
 }
-.team-inner-section-area .team-boxarea .content a {
+.team-inner-section-area .team-boxarea .content span {
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s24);
   line-height: var(--ztc-font-size-font-s24);
