@@ -7153,7 +7153,7 @@ Location:
 .hero7-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/header-bg7.png);
+  background-image: url(../img/bg/header-bg7.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 220px 0 180px;
@@ -7305,7 +7305,7 @@ Location:
 
 .hero8-section-area {
   position: relative;
-  background-image: url(../img/bg/header-bg8.png);
+  background-image: url(../img/bg/header-bg8.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -7434,7 +7434,7 @@ Location:
 .hero9-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/header-img9.png);
+  background-image: url(../img/bg/header-img9.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -7607,7 +7607,7 @@ Location:
 .hero10-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/header-bg11.png);
+  background-image: url(../img/bg/header-bg11.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -7823,7 +7823,7 @@ Location:
 .hero11-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/header-bg12.png);
+  background-image: url(../img/bg/header-bg12.webp);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8157,7 +8157,7 @@ Location:
 .hero14-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/haeder-bg14.png);
+  background-image: url(../img/bg/haeder-bg14.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8260,7 +8260,7 @@ Location:
 .hero15-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/header-bg14.png);
+  background-image: url(../img/bg/header-bg14.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13719,7 +13719,7 @@ Location:
   position: relative;
   z-index: 1;
   padding: 220px 0 0 0;
-  background-image: url(../img/bg/footer-bg1.png);
+  background-image: url(../img/bg/footer-bg1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13993,7 +13993,7 @@ Location:
   position: relative;
   z-index: 1;
   padding: 220px 0 0 0;
-  background-image: url(../img/bg/footer-bg1.png);
+  background-image: url(../img/bg/footer-bg1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18347,7 +18347,7 @@ html {
   animation-name: fade-in-down;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  background-image: url(../img/bg/header-bg12.png);
+  background-image: url(../img/bg/header-bg12.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27170,7 +27170,7 @@ html {
 .cta11-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/cta-bg6.png);
+  background-image: url(../img/bg/cta-bg6.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27279,7 +27279,7 @@ html {
 .cta12-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/cta-bg7.png);
+  background-image: url(../img/bg/cta-bg7.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27375,7 +27375,7 @@ html {
 .cta13-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/cta-bg13.png);
+  background-image: url(../img/bg/cta-bg13.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27430,7 +27430,7 @@ html {
 .cta14-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/bg/haeder-bg14.png);
+  background-image: url(../img/bg/haeder-bg14.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29909,43 +29909,43 @@ html {
   }
 }
 .case1-section-area .cs_case_study_thumb {
-  background-image: url(../img/all-images/case-img1.png);
+  background-image: url(../img/all-images/case-img1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb2 {
-  background-image: url(../img/all-images/case-img2.png);
+  background-image: url(../img/all-images/case-img2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb3 {
-  background-image: url(../img/all-images/case-img3.png);
+  background-image: url(../img/all-images/case-img3.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb4 {
-  background-image: url(../img/all-images/case-img4.png);
+  background-image: url(../img/all-images/case-img4.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb5 {
-  background-image: url(../img/all-images/case-img5.png);
+  background-image: url(../img/all-images/case-img5.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb6 {
-  background-image: url(../img/all-images/case-img6.png);
+  background-image: url(../img/all-images/case-img6.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case1-section-area .cs_case_study_thumb.cs_case_study_thumb7 {
-  background-image: url(../img/all-images/case-img7.png);
+  background-image: url(../img/all-images/case-img7.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30161,43 +30161,43 @@ html {
   }
 }
 .case4-section-area .cs_case_study_thumb {
-  background-image: url(../img/all-images/case-img1.png);
+  background-image: url(../img/all-images/case-img1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb2 {
-  background-image: url(../img/all-images/case-img2.png);
+  background-image: url(../img/all-images/case-img2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb3 {
-  background-image: url(../img/all-images/case-img3.png);
+  background-image: url(../img/all-images/case-img3.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb4 {
-  background-image: url(../img/all-images/case-img4.png);
+  background-image: url(../img/all-images/case-img4.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb5 {
-  background-image: url(../img/all-images/case-img5.png);
+  background-image: url(../img/all-images/case-img5.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb6 {
-  background-image: url(../img/all-images/case-img6.png);
+  background-image: url(../img/all-images/case-img6.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .case4-section-area .cs_case_study_thumb.cs_case_study_thumb7 {
-  background-image: url(../img/all-images/case-img7.png);
+  background-image: url(../img/all-images/case-img7.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
