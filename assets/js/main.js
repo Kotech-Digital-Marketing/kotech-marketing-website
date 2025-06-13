@@ -15,6 +15,70 @@ $(window).on("scroll", function (event) {
 }
 //========== HEADER ACTIVE ENDS ============= //
 
+//========== ACTIVE NAV LINK ON CURRENT PAGE STARTS (FIXED VERSION) =============//
+$(document).ready(function() {
+  // Get current page path
+  var currentPath = window.location.pathname;
+  var currentPage = currentPath.split('/').pop(); // Get filename from path
+  
+  // If no filename (root path), assume index.html
+  if (currentPage === '' || currentPage === '/') {
+      currentPage = 'index.html';
+  }
+  
+  // console.log('Current page:', currentPage); // Debug log
+  
+  // // Find all navigation links
+  var navLinks = $('.main-menu a, .mobile-nav a');
+  
+  navLinks.each(function() {
+      var linkHref = $(this).attr('href');
+      
+      // Skip empty, undefined, or placeholder links
+      if (!linkHref || linkHref === '#' || linkHref.startsWith('#')) {
+          return;
+      }
+      
+      // Extract filename from href
+      var linkPage = linkHref.split('/').pop();
+      
+      // console.log('Checking link:', linkHref, 'extracted:', linkPage); // Debug log
+      
+      // Check for matches
+      var isMatch = false;
+      
+      // Direct filename match
+      if (currentPage === linkPage) {
+          isMatch = true;
+      }
+      // Handle index page special case
+      else if ((currentPage === 'index.html' || currentPath === '/') && 
+               (linkPage === 'index.html' || linkHref === '/')) {
+          isMatch = true;
+      }
+      // Handle pages without .html extension
+      else if (currentPage.replace('.html', '') === linkPage.replace('.html', '')) {
+          isMatch = true;
+      }
+      
+      if (isMatch) {
+          // console.log('Match found for:', linkHref); // Debug log
+          
+          // Add active class to the link
+          $(this).addClass('active-link');
+          
+          // Check if this link is inside a dropdown
+          var dropdownParent = $(this).closest('.dropdown-padding');
+          if (dropdownParent.length > 0) {
+              // Add active class to the parent dropdown trigger
+              dropdownParent.closest('li').children('a').first().addClass('active-link');
+              // console.log('Added active class to dropdown parent'); // Debug log
+          }
+      }
+  });
+});
+//========== ACTIVE NAV LINK ON CURRENT PAGE ENDS (FIXED VERSION) =============//
+
 //========== SIDEBAR/SEARCH AREA ============= //
 $(".header-search-btn").on("click", function (e) {
   e.preventDefault();
