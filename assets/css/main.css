@@ -15324,6 +15324,24 @@ html {
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a {
   transition: all 0.4s;
   color: var(--ztc-text-text-4) !important;
+  text-decoration:underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2.3px;
+}/* Active nav link styles */
+.main-menu ul li a.active-link,
+.mobile-nav ul li a.active-link {
+    color: var(--ztc-text-text-4) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2.3px;
+}
+
+/* Ensure dropdown parent links also get styled */
+.main-menu ul li > a.active-link {
+    color: var(--ztc-text-text-4) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2.3px;
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .tp-submenu {
   visibility: hidden;
