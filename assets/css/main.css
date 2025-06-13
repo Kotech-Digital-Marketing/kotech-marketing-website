@@ -4377,24 +4377,39 @@ Location:
   transition: all 0.4s;
 }
 .service2-section-area .images-content-area .img1 {
+  position:relative;
   border-radius: 8px;
   transition: all 0.4s;
   overflow: hidden;
 }
 .service2-section-area .images-content-area .img1 img {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  position:relative;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 8px;
   transition: all 0.8s;
+  z-index: 1;
+}
+.service2-section-area .images-content-area .img1::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.288);
+  border-radius: 8px; /* Match the image border-radius */
+  pointer-events: none
+ 
 }
 .service2-section-area .images-content-area .content-area {
   padding: 24px;
   padding: 24px;
   margin-top: -300px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .service2-section-area .images-content-area .content-area {
@@ -6434,9 +6449,9 @@ Location:
   background: var(--ztc-text-text-4);
   color: var(--ztc-text-text-1);
 }
-.hero1-section-area .header-images-area {
-  /* position: relative; */
-}
+/* .hero1-section-area .header-images-area {
+  position: relative;
+} */
 .hero1-section-area .header-images-area .main-images-area {
   position: relative;
 }
@@ -11978,7 +11993,8 @@ Location:
   transition: all 0.4s;
 }
 .footer1-section-area .footer-logo-area2 ul li a img {
-  margin: 0 8px 0 0;
+  margin: 4px 8px 0 0;
+  width: 16px;
 }
 .footer1-section-area .footer-logo-area2 ul li a span {
   transition: all 0.4s;
@@ -15160,6 +15176,11 @@ html {
 .homepage1-body .header-area.homepage1 .header-elements .main-menu {
   position: relative;
 }
+.homepage1-body .header-area.homepage1 .header-elements .main-menu ul {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li {
   display: inline-block;
   position: relative;
@@ -15406,6 +15427,9 @@ html {
   animation-fill-mode: forwards;
   background: var(--ztc-text-text-1);
   transition: all 0.4s;
+  box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
+  -moz-box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
 }
 
 .btn-area {
@@ -27703,8 +27727,8 @@ html {
   color: var(--ztc-text-text-2);
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .pera .list-area img {
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .images img {
   height: 382px;
@@ -27857,8 +27881,8 @@ html {
   color: var(--ztc-text-text-2);
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .pera .list-area img {
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .images img {
   height: 382px;
@@ -29065,8 +29089,8 @@ html {
   color: var(--ztc-text-text-2);
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .pera .list-area img {
-  height: 80px;
-  width: 80px;
+  height: 40px;
+  width: 40px;
 }
 .testimonial1-section-area .testimonials-slider-area .testimonial-boxarea .images img {
   height: 382px;
