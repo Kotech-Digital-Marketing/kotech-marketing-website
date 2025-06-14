@@ -58,11 +58,20 @@
     <meta name="apple-mobile-web-app-title" content="Kotech Digital Hub" />
     <meta name="robots" content="index, follow" />
 
-    <!-- 1. Preconnect to Google Fonts domains -->
+    <!-- 1. Preconnect to required origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- 2. Asynchronously load the font stylesheet -->
+    <!-- 2. Preload Key Font to reduce CLS -->
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/figtree/v5/xMW231iHl_2zv9b-w2SMT-4s6hllgdK6goS9L-a29w.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- 3. Asynchronously load the font stylesheet -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
@@ -152,6 +161,23 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/plugins/nice-select.css"
     /></noscript>
+
+    <!-- Inline styles to support the LCP optimization -->
+    <style>
+      .about-header-area {
+        position: relative;
+        overflow: hidden;
+      }
+      .about-header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    </style>
 
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
   </head>
@@ -252,6 +278,8 @@
                         <img
                           src="assets/img/icons/search-icons1.svg"
                           alt="Search Icon"
+                          width="24"
+                          height="24"
                         />
                       </button>
                     </form>
@@ -276,7 +304,7 @@
                 ><img
                   src="assets/img/logo/logo.webp"
                   alt="Kotech Digital Hub Mobile Logo"
-                  style="width: 120px"
+                  style="width: 120px; height: auto"
               /></a>
             </div>
             <div class="mobile-nav-icon dots-menu">
@@ -293,7 +321,7 @@
           <img
             src="assets/img/logo/logo.webp"
             alt="Kotech Digital Hub Mobile Menu Logo"
-            style="width: 100px"
+            style="width: 100px; height: auto"
           />
         </div>
         <div class="menu-close">
@@ -390,24 +418,30 @@
     <!--===== MOBILE HEADER ENDS =======-->
 
     <!--===== HERO AREA STARTS =======-->
-    <div
-      class="about-header-area"
-      style="
-        background-image: url(assets/img/bg/inner-header.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      "
-    >
+    <div class="about-header-area">
+      <!-- LCP OPTIMIZATION: Use a high-priority img tag instead of a CSS background-image -->
+      <img
+        src="assets/img/bg/inner-header.webp"
+        alt="Abstract purple and white header background"
+        class="about-header-bg"
+        width="1920"
+        height="400"
+      />
+
+      <!-- The rest of the content sits on top of the background image -->
       <img
         src="assets/img/elements/elements1.webp"
         alt="decorative element"
         class="elements1 aniamtion-key-1"
+        width="126"
+        height="117"
       />
       <img
         src="assets/img/elements/star2.webp"
         alt="decorative star"
         class="star2 keyframe5"
+        width="20"
+        height="20"
       />
       <div class="container">
         <div class="row">
@@ -436,6 +470,8 @@
                   src="assets/img/all-images/about-img1.webp"
                   alt="Team collaborating on a digital marketing project"
                   loading="lazy"
+                  width="370"
+                  height="450"
                 />
               </figure>
               <img
@@ -443,6 +479,8 @@
                 alt="decorative star element"
                 class="star1 keyframe5"
                 loading="lazy"
+                width="35"
+                height="35"
               />
             </div>
           </div>
@@ -455,12 +493,16 @@
                     alt="decorative circle element"
                     class="elements4 keyframe5"
                     loading="lazy"
+                    width="85"
+                    height="85"
                   />
                   <img
                     src="assets/img/icons/arrow.svg"
                     alt="arrow icon"
                     class="arrow"
                     loading="lazy"
+                    width="24"
+                    height="24"
                   />
                 </a>
               </div>
@@ -495,12 +537,16 @@
                 alt="decorative element"
                 class="elements5 keyframe5"
                 loading="lazy"
+                width="85"
+                height="85"
               />
               <figure class="image-anime reveal">
                 <img
                   src="assets/img/all-images/about-img2.webp"
                   alt="Marketing professional analyzing data on a laptop"
                   loading="lazy"
+                  width="270"
+                  height="350"
                 />
               </figure>
             </div>
@@ -532,10 +578,12 @@
                     src="assets/img/icons/works-icons7.svg"
                     alt="Proven results icon"
                     loading="lazy"
+                    width="60"
+                    height="60"
                   />
                 </div>
                 <div class="content">
-                  <a href="#">Proven Result</a>
+                  <a href="case.html">Proven Result</a>
                   <p>
                     Our strategies are backed by real success stories. We’ve
                     helped businesses boost traffic, get more leads, and grow
@@ -550,10 +598,12 @@
                     src="assets/img/icons/works-icons8.svg"
                     alt="Customized solutions icon"
                     loading="lazy"
+                    width="60"
+                    height="60"
                   />
                 </div>
                 <div class="content">
-                  <a href="#">Customized Solutions</a>
+                  <a href="case-single.html">Customized Solutions</a>
                   <p>
                     Every business is different. We design strategies that are
                     personalized to your goals and market.
@@ -567,10 +617,12 @@
                     src="assets/img/icons/works-icons9.svg"
                     alt="Dedicated support icon"
                     loading="lazy"
+                    width="60"
+                    height="60"
                   />
                 </div>
                 <div class="content">
-                  <a href="#">Dedicated Support</a>
+                  <a href="case-single.html">Dedicated Support</a>
                   <p>
                     Our team is with you every step of the way. Got a question?
                     We’re just a call or message away.
@@ -586,12 +638,16 @@
                 alt="decorative element"
                 class="elements12 keyframe5"
                 loading="lazy"
+                width="37"
+                height="37"
               />
               <img
                 src="assets/img/elements/elements15.webp"
                 alt="decorative element"
                 class="elements13 keyframe5"
                 loading="lazy"
+                width="37"
+                height="37"
               />
               <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -601,6 +657,8 @@
                       src="assets/img/all-images/about-img6.webp"
                       alt="Professional woman in a business meeting"
                       loading="lazy"
+                      width="270"
+                      height="350"
                     />
                   </div>
                 </div>
@@ -610,6 +668,8 @@
                       src="assets/img/all-images/about-img5.webp"
                       alt="Professional man working on a laptop"
                       loading="lazy"
+                      width="270"
+                      height="350"
                     />
                   </div>
                 </div>
@@ -632,12 +692,16 @@
                 alt="decorative star"
                 class="star2 keyframe5"
                 loading="lazy"
+                width="20"
+                height="20"
               />
               <img
                 src="assets/img/elements/star2.webp"
                 alt="decorative star"
                 class="star3 keyframe5"
                 loading="lazy"
+                width="20"
+                height="20"
               />
               <h2 class="text-anime-style-3">Why Choose Kotech Digital Hub?</h2>
               <p
@@ -667,6 +731,8 @@
                   src="assets/img/all-images/service-img1.webp"
                   alt="Team discussing digital strategy around a tablet"
                   loading="lazy"
+                  width="670"
+                  height="450"
                 />
               </div>
               <div class="content-area">
@@ -770,12 +836,16 @@
         alt="abstract background graphic"
         class="cta-bg1 aniamtion-key-2"
         loading="lazy"
+        width="400"
+        height="400"
       />
       <img
         src="assets/img/bg/cta-bg2.webp"
         alt="abstract background graphic"
         class="cta-bg2 aniamtion-key-1"
         loading="lazy"
+        width="400"
+        height="400"
       />
       <div class="container">
         <div class="row">
@@ -871,6 +941,8 @@
                   alt="Hityendra Singh Rathore"
                   class="img-fluid rounded w-100"
                   loading="lazy"
+                  width="400"
+                  height="400"
                 />
               </div>
               <div class="col-lg-8 ps-lg-4 mt-4 mt-lg-0">
@@ -898,6 +970,8 @@
                         src="assets/img/icons/facebook.svg"
                         alt="facebook icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -906,6 +980,8 @@
                         src="assets/img/icons/instagram.svg"
                         alt="instagram icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -914,6 +990,8 @@
                         src="assets/img/icons/linkedin.svg"
                         alt="linkedin icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -922,6 +1000,8 @@
                         src="assets/img/icons/youtube.svg"
                         alt="youtube icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                 </ul>
@@ -960,6 +1040,8 @@
                         src="assets/img/icons/facebook.svg"
                         alt="facebook icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -968,6 +1050,8 @@
                         src="assets/img/icons/instagram.svg"
                         alt="instagram icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -976,6 +1060,8 @@
                         src="assets/img/icons/linkedin.svg"
                         alt="linkedin icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                   <li>
@@ -984,6 +1070,8 @@
                         src="assets/img/icons/youtube.svg"
                         alt="youtube icon"
                         loading="lazy"
+                        width="24"
+                        height="24"
                     /></a>
                   </li>
                 </ul>
@@ -994,6 +1082,8 @@
                   alt="Neeraj Patni"
                   class="img-fluid rounded w-100"
                   loading="lazy"
+                  width="400"
+                  height="400"
                 />
               </div>
             </div>
@@ -1014,12 +1104,16 @@
                 alt="decorative star"
                 class="star2 keyframe5"
                 loading="lazy"
+                width="20"
+                height="20"
               />
               <img
                 src="assets/img/elements/star2.webp"
                 alt="decorative star"
                 class="star3 keyframe5"
                 loading="lazy"
+                width="20"
+                height="20"
               />
               <h2 class="text-anime-style-3">Hear from Our Happy Clients</h2>
               <p data-aos="fade-up" data-aos-duration="1000">
@@ -1069,6 +1163,8 @@
                           src="assets/img/icons/google.svg"
                           alt="Google logo"
                           loading="lazy"
+                          width="80"
+                          height="26"
                         />
                       </div>
                     </div>
@@ -1105,6 +1201,8 @@
                           src="assets/img/icons/google.svg"
                           alt="Google logo"
                           loading="lazy"
+                          width="80"
+                          height="26"
                         />
                       </div>
                     </div>
@@ -1112,7 +1210,81 @@
                 </div>
               </div>
 
-              <!-- More reviews here -->
+              <!-- Review 3 - Sneha Patel -->
+              <div class="testimonial-boxarea">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="pera">
+                      <p>
+                        "Solid results from Kotech Digital Hub's content
+                        marketing strategy. They helped us build brand awareness
+                        in a competitive market. The only reason it's not 5
+                        stars is that the initial setup took longer than
+                        expected, but the end results were worth it."
+                        <br /><strong>- Sneha Patel, Tech Startup</strong>
+                      </p>
+                      <div class="space30"></div>
+                      <div class="list-area">
+                        <div class="list">
+                          <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                          </ul>
+                          <p>Rated on Google Reviews</p>
+                        </div>
+                        <img
+                          src="assets/img/icons/google.svg"
+                          alt="Google logo"
+                          loading="lazy"
+                          width="80"
+                          height="26"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 4 - Arjun Singh -->
+              <div class="testimonial-boxarea">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="pera">
+                      <p>
+                        "Fantastic ROI on our digital marketing investment!
+                        Kotech Digital Hub handled our PPC campaigns, social
+                        media, and website redesign. Lead generation increased
+                        by 250%. Their monthly reports are detailed and easy to
+                        understand."
+                        <br /><strong>- Arjun Singh, Real Estate Agency</strong>
+                      </p>
+                      <div class="space30"></div>
+                      <div class="list-area">
+                        <div class="list">
+                          <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                          </ul>
+                          <p>Rated on Google Reviews</p>
+                        </div>
+                        <img
+                          src="assets/img/icons/google.svg"
+                          alt="Google logo"
+                          loading="lazy"
+                          width="80"
+                          height="26"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1127,12 +1299,16 @@
         alt="abstract background graphic"
         class="cta-bg1 aniamtion-key-2"
         loading="lazy"
+        width="400"
+        height="400"
       />
       <img
         src="assets/img/bg/cta-bg2.webp"
         alt="abstract background graphic"
         class="cta-bg2 aniamtion-key-1"
         loading="lazy"
+        width="400"
+        height="400"
       />
       <div class="container">
         <div class="row">
@@ -1173,7 +1349,7 @@
               <img
                 src="assets/img/logo/logo.webp"
                 alt="Kotech Digital Hub Footer Logo"
-                style="width: 200px"
+                style="width: 200px; height: auto"
                 loading="lazy"
               />
               <p>
@@ -1187,6 +1363,8 @@
                       src="assets/img/icons/facebook.svg"
                       alt="facebook icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                   /></a>
                 </li>
                 <li>
@@ -1195,6 +1373,8 @@
                       src="assets/img/icons/instagram.svg"
                       alt="instagram icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                   /></a>
                 </li>
                 <li>
@@ -1203,6 +1383,8 @@
                       src="assets/img/icons/linkedin.svg"
                       alt="linkedin icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                   /></a>
                 </li>
                 <li>
@@ -1211,6 +1393,8 @@
                       src="assets/img/icons/youtube.svg"
                       alt="youtube icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                   /></a>
                 </li>
               </ul>
@@ -1239,6 +1423,8 @@
                       src="assets/img/icons/email.svg"
                       alt="email icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                     /><span>kotechdigitalhub@gmail.com</span></a
                   >
                 </li>
@@ -1248,6 +1434,8 @@
                       src="assets/img/icons/location.svg"
                       alt="location icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                     />
                     1st Floor, 103, Sankalp Tower,
                     <br class="d-lg-block d-none" />
@@ -1262,6 +1450,8 @@
                       src="assets/img/icons/phone.svg"
                       alt="phone icon"
                       loading="lazy"
+                      width="24"
+                      height="24"
                     />
                     +91 9549414415 <br />
                   </a>
