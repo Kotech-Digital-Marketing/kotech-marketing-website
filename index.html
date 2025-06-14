@@ -50,6 +50,7 @@
     <meta name="robots" content="index, follow" />
     <!-- === ADD THIS LINE HERE === -->
     <link rel="preload" as="image" href="assets/img/bg/header-bg1.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/img/all-images/header-img1.webp" fetchpriority="high" />
     <!-- === END OF ADDED LINE === -->
 
     <!-- 1. Preconnect to Google Fonts domains -->
@@ -68,7 +69,8 @@
 
     <!--===== CSS LINK =======-->
     <!-- Main styling - Load this one synchronously -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="assets/css/main.css" /></noscript>
 
     <!-- Non-critical and plugin styles - Load these asynchronously -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" media="print" onload="this.media='all'" />
@@ -121,7 +123,7 @@
             <div class="col-lg-12">
               <div class="header-elements">
                 <div class="site-logo" style="width: 150px; margin-top: -15px">
-                  <a href="index.html"><img src="assets/img/logo/logo.webp" alt="" /><span class="sr-only">Link to home-page</span></a>
+                  <a href="index.html"><img src="assets/img/logo/logo.webp" alt="" width="100%" height="100%" /><span class="sr-only visually-hidden">Link to home-page</span></a>
                 </div>
                 <div class="main-menu">
                   <ul>
@@ -169,7 +171,7 @@
                     <form role="search" class="search-form">
                       <input type="search" class="search-field" placeholder="Search …" value="" name="s" />
                       <button type="submit" class="search-submit">
-                        <img src="assets/img/icons/search-icons1.svg" alt="" />
+                        <img src="assets/img/icons/search-icons1.svg" alt="" width="100%" height="100%" />
                       </button>
                     </form>
                   </div>
@@ -189,7 +191,7 @@
         <div class="col-12">
           <div class="mobile-header-elements">
             <div class="mobile-logo">
-              <a href="index.html"><img src="assets/img/logo/logo.webp" alt="" style="width: 120px" /></a>
+              <a href="index.html"><img src="assets/img/logo/logo.webp" alt="" style="width: 120px" height="100%" width="100%" /> <span class="sr-only visually-hidden">Link to home-page</span></a>
             </div>
             <div class="mobile-nav-icon dots-menu">
               <i class="fa-solid fa-bars"></i>
@@ -202,7 +204,7 @@
     <div class="mobile-sidebar mobile-sidebar1">
       <div class="logosicon-area">
         <div class="logos">
-          <img src="assets/img/logo/logo.webp" alt="" style="width: 100px" />
+          <img src="assets/img/logo/logo.webp" alt="" style="width: 100px" width="100%" height="100%" />
         </div>
         <div class="menu-close">
           <i class="fa-solid fa-xmark"></i>
@@ -337,8 +339,8 @@
                   <img src="assets/img/elements/elements3.webp" alt="" class="elements3" />
                 </div>
                 <div class="auhtor-images">
-                  <img src="assets/img/all-images/header-author-img1.webp" alt="" class="header-author-img1 aniamtion-key-2" />
-                  <img src="assets/img/all-images/header-author-img2.webp" alt="" class="header-author-img2 aniamtion-key-2" />
+                  <img src="assets/img/all-images/header-author-img1.webp" alt="" class="header-author-img1 aniamtion-key-2" loading="lazy" />
+                  <img src="assets/img/all-images/header-author-img2.webp" alt="" class="header-author-img2 aniamtion-key-2" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -398,7 +400,7 @@
                 <div class="arrow-circle">
                   <a href="about.html">
                     <img src="assets/img/elements/elements4.webp" alt="" class="elements4 keyframe5" />
-                    <img src="assets/img/icons/arrow.svg" alt="" class="arrow" />
+                    <img src="assets/img/icons/arrow.svg" alt="" class="arrow" /><span class="sr-only visually-hidden">Link to about-page</span>
                   </a>
                 </div>
                 <h2 class="text-anime-style-3">Smart Digital Marketing Solutions That Drive Results</h2>
@@ -447,7 +449,7 @@
                 <div class="service-boxarea" data-aos="zoom-in" data-aos-duration="800">
                   <a href="service1.html">Search Engine Optimization (SEO)</a>
                   <div class="space40"></div>
-                  <img src="assets/img/icons/service-icon1.svg" alt="" />
+                  <img src="assets/img/icons/service-icon1.svg" alt="" loading="lazy" />
                   <div class="space40"></div>
                   <!-- <p>
                     Enhance your online visibility & drive organic traffic with
@@ -461,7 +463,7 @@
                   <!-- <a href="service1.html">Pay-Per-Click (PPC) Advertising</a> -->
                   <a href="service1.html">Local SEO</a>
                   <div class="space40"></div>
-                  <img src="assets/img/icons/service-icon2.svg" alt="" />
+                  <img src="assets/img/icons/service-icon2.svg" alt="" loading="lazy" />
                   <div class="space40"></div>
                   <!-- <p>
                     Reach your audience instantly and drive qualified leads with
@@ -474,7 +476,7 @@
                 <div class="service-boxarea box3" data-aos="zoom-in" data-aos-duration="1200">
                   <a href="service1.html">Social Media Marketing</a>
                   <div class="space66"></div>
-                  <img src="assets/img/icons/service-icon3.svg" alt="" />
+                  <img src="assets/img/icons/service-icon3.svg" alt="" loading="lazy" />
                   <div class="space40"></div>
                   <!-- <p>
                     Build a strong brand presence and engage with your audience
@@ -487,7 +489,7 @@
                 <div class="service-boxarea box4" data-aos="zoom-in" data-aos-duration="1400">
                   <a href="service1.html">Website Design and Development</a>
                   <div class="space40"></div>
-                  <img src="assets/img/icons/service-icon4.svg" alt="" />
+                  <img src="assets/img/icons/service-icon4.svg" alt="" loading="lazy" />
                   <div class="space40"></div>
                   <!-- <p>
                     Make a lasting impression with a professionally designed and
@@ -526,7 +528,7 @@
             <div class="col-lg-7">
               <div class="images-content-area" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="img1">
-                  <img src="assets/img/all-images/service-img1.webp" alt="" />
+                  <img src="assets/img/all-images/service-img1.webp" alt="" loading="lazy" />
                 </div>
                 <div class="content-area">
                   <p>Our Value</p>
@@ -543,7 +545,7 @@
                   </div>
                 </div>
                 <div class="arrow-area">
-                  <a href="service1.html"><i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="service1.html"><i class="fa-solid fa-arrow-right"></i> <span class="sr-only visually-hidden">Link to about-page</span></a>
                 </div>
               </div>
             </div>
@@ -1273,16 +1275,16 @@
                 <p>Empowering businesses with tailored marketing and web solutions — helping local brands grow and scale globally with confidence.</p>
                 <ul>
                   <li>
-                    <a href="#"><img src="assets/img/icons/facebook.svg" alt="" /></a>
+                    <a href="#"><img src="assets/img/icons/facebook.svg" alt="" /> <span class="sr-only visually-hidden">Link to facebook</span> </a>
                   </li>
                   <li>
-                    <a href="#"><img src="assets/img/icons/instagram.svg" alt="" /></a>
+                    <a href="#"><img src="assets/img/icons/instagram.svg" alt="" /> <span class="sr-only visually-hidden">Link to instagram</span></a>
                   </li>
                   <li>
-                    <a href="#"><img src="assets/img/icons/linkedin.svg" alt="" /></a>
+                    <a href="#"><img src="assets/img/icons/linkedin.svg" alt="" /> <span class="sr-only visually-hidden">Link to linkedin</span></a>
                   </li>
                   <li>
-                    <a href="#"><img src="assets/img/icons/youtube.svg" alt="" /></a>
+                    <a href="#"><img src="assets/img/icons/youtube.svg" alt="" /> <span class="sr-only visually-hidden">Link to youtube</span></a>
                   </li>
                 </ul>
               </div>
