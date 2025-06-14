@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- Mirrored from Kotech Digital Hub-html-v2.vercel.app/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 06:39:00 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
 
   <head>
     <meta charset="UTF-8" />
@@ -62,8 +66,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- 2. Preload critical assets (LCP Image and Key Font) to reduce LCP and CLS -->
-    <link rel="preload" as="image" href="assets/img/bg/inner-header.webp" />
+    <!-- 2. Preload Key Font to reduce CLS -->
     <link
       rel="preload"
       href="https://fonts.gstatic.com/s/figtree/v5/xMW231iHl_2zv9b-w2SMT-4s6hllgdK6goS9L-a29w.woff2"
@@ -163,6 +166,23 @@
       ><link rel="stylesheet" href="assets/css/plugins/nice-select.css"
     /></noscript>
 
+    <!-- Inline styles to support the LCP optimization -->
+    <style>
+      .about-header-area {
+        position: relative;
+        overflow: hidden;
+      }
+      .about-header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+    </style>
+
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
   </head>
 
@@ -227,9 +247,6 @@
                     <li>
                       <a href="service1.html">Services</a>
                     </li>
-                    <!-- <li>
-                      <a href="blog.html">Blogs</a>
-                    </li> -->
                     <li>
                       <a href="#"
                         >Pages <i class="fa-solid fa-angle-down"></i
@@ -237,24 +254,15 @@
                       <ul
                         class="dropdown-padding flex-column align-items-start"
                       >
-                        <!-- <li><a href="case.html">Case Study</a></li> -->
-                        <!-- <li>
-                          <a href="case-single.html">Case Study Single</a>
-                        </li> -->
                         <li><a href="team.html">Our Team</a></li>
-                        <!-- <li><a href="pricing.html">Pricing Plan</a></li> -->
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <!-- <li><a href="404.html">404</a></li> -->
                       </ul>
                     </li>
                     <li><a href="contact.html">Contact Us</a></li>
                   </ul>
                 </div>
                 <div class="btn-area">
-                  <!-- <div class="search-icon header__search header-search-btn">
-                    <a href="#"><img src="assets/img/icons/search-icons1.svg" alt="" /></a>
-                  </div> -->
                   <a href="contact.html" class="header-btn1"
                     >Free Consultation
                     <span><i class="fa-solid fa-arrow-right"></i></span
@@ -339,21 +347,14 @@
           </li>
           <li><a href="about.html">About</a></li>
           <li>
-            <a href="#">Services <i class="fa-solid"></i></a>
+            <a href="service1.html">Services</a>
           </li>
-          <!-- <li>
-            <a href="blog.html">Blogs</a>
-          </li> -->
           <li>
             <a href="#">Pages</a>
             <ul class="sub-menu">
-              <!-- <li><a href="case.html">Case Study One</a></li> -->
-              <!-- <li><a href="case-single.html">Case Study Single</a></li> -->
               <li><a href="team.html">Our Team</a></li>
-              <!-- <li><a href="pricing.html">Pricing Plan</a></li> -->
               <li><a href="testimonials.html">Testimonials</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <!-- <li><a href="404.html">404</a></li> -->
             </ul>
           </li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -429,15 +430,18 @@
     <!--===== MOBILE HEADER ENDS =======-->
 
     <!--===== HERO AREA STARTS =======-->
-    <div
-      class="about-header-area"
-      style="
-        background-image: url(assets/img/bg/inner-header.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      "
-    >
+    <div class="about-header-area">
+      <!-- LCP OPTIMIZATION: Use a high-priority img tag instead of a CSS background-image -->
+      <img
+        src="assets/img/bg/inner-header.webp"
+        alt="Abstract purple and white header background"
+        class="about-header-bg"
+        fetchpriority="high"
+        width="1920"
+        height="400"
+      />
+
+      <!-- The rest of the content sits on top of the background image -->
       <img
         src="assets/img/elements/elements1.webp"
         alt="decorative element"
@@ -1141,17 +1145,30 @@
             data-aos-duration="1000"
           >
             <div class="testimonials-slider-area owl-carousel">
-              <!-- All testimonial items here -->
-              <!-- Example for one item -->
+              <!-- Review 1 - Priya Sharma -->
               <div class="testimonial-boxarea">
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="pera">
-                      <p>...</p>
+                      <p>
+                        "Kotech Digital Hub transformed our online presence
+                        completely! Our website traffic increased by 300% in
+                        just 4 months, and our conversion rates doubled. Their
+                        team really understands SEO and social media marketing.
+                        Highly recommend!"
+                        <br /><strong
+                          >- Priya Sharma, E-commerce Store Owner</strong
+                        >
+                      </p>
+                      <div class="space30"></div>
                       <div class="list-area">
                         <div class="list">
                           <ul>
-                            ...
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
                           </ul>
                           <p>Rated on Google Reviews</p>
                         </div>
@@ -1167,7 +1184,120 @@
                   </div>
                 </div>
               </div>
-              <!-- Repeat for all other testimonials -->
+
+              <!-- Review 2 - Rajesh Gupta -->
+              <div class="testimonial-boxarea">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="pera">
+                      <p>
+                        "Working with Kotech Digital Hub was a game-changer for
+                        our restaurant locations. They managed our Google Ads
+                        campaigns and local SEO perfectly. We saw a 45% increase
+                        in foot traffic and online orders. Professional team
+                        with great communication."
+                        <br /><strong>- Rajesh Gupta, Restaurant Chain</strong>
+                      </p>
+                      <div class="space30"></div>
+                      <div class="list-area">
+                        <div class="list">
+                          <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                          </ul>
+                          <p>Rated on Google Reviews</p>
+                        </div>
+                        <img
+                          src="assets/img/icons/google.svg"
+                          alt="Google logo"
+                          loading="lazy"
+                          width="80"
+                          height="26"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 3 - Sneha Patel -->
+              <div class="testimonial-boxarea">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="pera">
+                      <p>
+                        "Solid results from Kotech Digital Hub's content
+                        marketing strategy. They helped us build brand awareness
+                        in a competitive market. The only reason it's not 5
+                        stars is that the initial setup took longer than
+                        expected, but the end results were worth it."
+                        <br /><strong>- Sneha Patel, Tech Startup</strong>
+                      </p>
+                      <div class="space30"></div>
+                      <div class="list-area">
+                        <div class="list">
+                          <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                          </ul>
+                          <p>Rated on Google Reviews</p>
+                        </div>
+                        <img
+                          src="assets/img/icons/google.svg"
+                          alt="Google logo"
+                          loading="lazy"
+                          width="80"
+                          height="26"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review 4 - Arjun Singh -->
+              <div class="testimonial-boxarea">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="pera">
+                      <p>
+                        "Fantastic ROI on our digital marketing investment!
+                        Kotech Digital Hub handled our PPC campaigns, social
+                        media, and website redesign. Lead generation increased
+                        by 250%. Their monthly reports are detailed and easy to
+                        understand."
+                        <br /><strong>- Arjun Singh, Real Estate Agency</strong>
+                      </p>
+                      <div class="space30"></div>
+                      <div class="list-area">
+                        <div class="list">
+                          <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                          </ul>
+                          <p>Rated on Google Reviews</p>
+                        </div>
+                        <img
+                          src="assets/img/icons/google.svg"
+                          alt="Google logo"
+                          loading="lazy"
+                          width="80"
+                          height="26"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1290,10 +1420,8 @@
             <div class="footer-logo-area1">
               <h3>About Link</h3>
               <ul>
-                <!-- <li><a href="blog.html">Our Blog</a></li> -->
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="service1.html">Services</a></li>
-                <!-- <li><a href="case.html">Marketing</a></li> -->
                 <li><a href="testimonials.html">Testimonials</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
@@ -1385,4 +1513,6 @@
     <script src="assets/js/plugins/circle-progress.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </body>
+
+  <!-- Mirrored from Kotech Digital Hub-html-v2.vercel.app/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Jun 2025 06:39:03 GMT -->
 </html>
