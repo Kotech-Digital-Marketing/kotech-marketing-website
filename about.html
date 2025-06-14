@@ -166,7 +166,7 @@
       ><link rel="stylesheet" href="assets/css/plugins/nice-select.css"
     /></noscript>
 
-    <!-- Inline styles to support the LCP optimization -->
+    <!-- Inline styles to support LCP optimization and fix Navbar layout -->
     <style>
       .about-header-area {
         position: relative;
@@ -180,6 +180,13 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
+      }
+      /* Fix for stretched desktop navbar */
+      .header-area .header-elements .main-menu {
+        margin-left: 40px; /* Adjust gap between logo and menu */
+      }
+      .header-area .header-elements .btn-area {
+        margin-left: auto; /* Pushes the button to the far right */
       }
     </style>
 
@@ -195,8 +202,6 @@
           <img
             src="assets/img/logo/logo.webp"
             alt="Kotech Digital Hub Preloader Logo"
-            width="250"
-            height="60"
           />
         </div>
       </div>
@@ -233,8 +238,6 @@
                     ><img
                       src="assets/img/logo/logo.webp"
                       alt="Kotech Digital Hub Logo"
-                      width="250"
-                      height="60"
                     /><span class="sr-only">Link to home-page</span></a
                   >
                 </div>
