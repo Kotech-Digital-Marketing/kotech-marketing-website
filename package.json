@@ -1,0 +1,23 @@
+{
+  "name": "kotech-marketing-website",
+  "version": "1.0.0",
+  "main": "imageCompressor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kotech-Digital-Marketing/kotech-marketing-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kotech-Digital-Marketing/kotech-marketing-website/issues"
+  },
+  "homepage": "https://github.com/Kotech-Digital-Marketing/kotech-marketing-website#readme",
+  "description": "",
+  "dependencies": {
+    "sharp": "^0.34.2"
+  }
+}
