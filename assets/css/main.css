@@ -1,4 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap"); */
+
+@font-face {
+  font-family: 'Figtree Fallback';
+  size-adjust: 104.5%;
+  ascent-override: 90%;
+  src: local('Arial');
+}
+body {
+    font-family: 'Figtree', 'Figtree Fallback', sans-serif;
+}
 .container {
   max-width: 85% !important;
 }
