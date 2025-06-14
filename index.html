@@ -18,6 +18,7 @@
       content="Kotech Digital Hub is a results-driven digital marketing agency in Jaipur, specializing in SEO, Social Media Marketing, and custom Web Development to help your business grow online." />
     <meta name="keywords" content="digital marketing agency, seo services, web development jaipur, social media marketing, local seo, kotech digital hub" />
     <meta name="author" content="Kotech Digital Hub" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- 2. Canonical Tag -->
     <link rel="canonical" href="https://www.kotechdigitalhub.com/index.html" />
@@ -28,7 +29,6 @@
     <meta property="og:title" content="Kotech Digital Hub | Expert SEO, SMM & Web Development Agency" />
     <meta property="og:description" content="Partner with Kotech Digital Hub to boost your online presence with expert SEO, engaging social media strategies, and high-performance websites." />
     <meta property="og:image" content="https://www.kotechdigitalhub.com/assets/img/og-image.webp" />
-    <!-- IMPORTANT: Ensure this image exists at this URL -->
     <meta property="og:site_name" content="Kotech Digital Hub" />
 
     <!-- 4. Twitter Card Meta Tags -->
@@ -37,55 +37,25 @@
     <meta name="twitter:title" content="Kotech Digital Hub | Expert SEO, SMM & Web Development Agency" />
     <meta name="twitter:description" content="Partner with Kotech Digital Hub to boost your online presence with expert SEO, engaging social media strategies, and high-performance websites." />
     <meta name="twitter:image" content="https://www.kotechdigitalhub.com/assets/img/og-image.webp" />
-    <!-- IMPORTANT: Ensure this image exists at this URL -->
 
-    <!-- 5. Favicon -->
-    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png" />
-    <!-- Optional: Create a 180x180px icon for Apple devices -->
+    <!-- 5. Favicon, PWA & Apple Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo/favicon.ico" />
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/logo/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/logo/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Kotech Digital Hub" />
 
     <!-- 6. Robots Tag -->
     <meta name="robots" content="index, follow" />
 
-    <!-- 7. Schema.org JSON-LD for Local Business -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Kotech Digital Hub",
-        "image": "https://www.kotechdigitalhub.com/assets/img/logo/logo.webp",
-        "@id": "https://www.kotechdigitalhub.com",
-        "url": "https://www.kotechdigitalhub.com",
-        "telephone": "+919549414415",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1st Floor, 103, Sankalp Tower, Queens Rd Turn, Vaishali Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302012",
-          "addressRegion": "RJ",
-          "addressCountry": "IN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 26.9110189,
-          "longitude": 75.732909
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "10:00",
-          "closes": "19:00"
-        },
-        "sameAs": ["https://www.facebook.com/yourprofile", "https://www.instagram.com/yourprofile", "https://www.linkedin.com/company/yourprofile"]
-      }
-    </script>
+    <!-- 7. Schema.org JSON-LD (Already added in previous step) -->
 
     <!-- ==================================================== -->
     <!-- ========= ESSENTIAL SEO & METADATA TAGS END ======== -->
     <!-- ==================================================== -->
 
-    <!--===== CSS LINK =======-->
+    <!--===== CSS & JS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/fontawesome.css" />
     <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
@@ -95,8 +65,6 @@
     <link rel="stylesheet" href="assets/css/plugins/slick-slider.css" />
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
-    <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
   </head>
 
