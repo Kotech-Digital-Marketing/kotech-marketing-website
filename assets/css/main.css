@@ -4377,7 +4377,7 @@ Location:
   transition: all 0.4s;
 }
 .service2-section-area .images-content-area .img1 {
-  position:relative;
+  position: relative;
   border-radius: 8px;
   transition: all 0.4s;
   overflow: hidden;
@@ -4385,7 +4385,7 @@ Location:
 .service2-section-area .images-content-area .img1 img {
   width: 100%;
   height: 100%;
-  position:relative;
+  position: relative;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 8px;
@@ -4401,8 +4401,7 @@ Location:
   width: 100%;
   background-color: hsla(0, 0%, 0%, 0.288);
   border-radius: 8px; /* Match the image border-radius */
-  pointer-events: none
- 
+  pointer-events: none;
 }
 .service2-section-area .images-content-area .content-area {
   padding: 24px;
@@ -11988,7 +11987,7 @@ Location:
   align-items: flex-start;
   margin-top: 20px;
 }
-.footer1-section-area .footer-logo-area2 ul li a:hover span {
+.footer1-section-area .footer-logo-area2 ul li a:hover {
   color: var(--ztc-text-text-4);
   transition: all 0.4s;
 }
@@ -15177,7 +15176,7 @@ html {
   position: relative;
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -15324,24 +15323,24 @@ html {
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a {
   transition: all 0.4s;
   color: var(--ztc-text-text-4) !important;
-  text-decoration:underline;
+  text-decoration: underline;
   text-underline-offset: 8px;
   text-decoration-thickness: 2.3px;
 }
 .main-menu ul li a.active-link,
 .mobile-nav ul li a.active-link {
-    color: var(--ztc-text-text-4) !important;
-    text-decoration: underline !important;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2.3px !important;
+  color: var(--ztc-text-text-4) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2.3px !important;
 }
 
 /* Ensure dropdown parent links also get styled */
 .main-menu ul li > a.active-link {
-    color: var(--ztc-text-text-4) !important;
-    text-decoration: underline !important;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2.3px !important;
+  color: var(--ztc-text-text-4) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2.3px !important;
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li .tp-submenu {
   visibility: hidden;
@@ -15445,9 +15444,9 @@ html {
   animation-fill-mode: forwards;
   background: var(--ztc-text-text-1);
   transition: all 0.4s;
-  box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
-  -webkit-box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
-  -moz-box-shadow: 1px 8px 16px -6px rgba(0,0,0,0.49);
+  box-shadow: 1px 8px 16px -6px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 1px 8px 16px -6px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 1px 8px 16px -6px rgba(0, 0, 0, 0.49);
 }
 
 .btn-area {
