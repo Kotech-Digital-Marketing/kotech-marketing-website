@@ -1,0 +1,11 @@
+# Instructions for all web crawlers.
+User-agent: *
+
+# Allow crawlers to access all parts of the site...
+Allow: /
+
+# ...except for the 404 error page, which shouldn't be indexed.
+Disallow: /404.html
+
+# Location of the XML sitemap.
+Sitemap: https://www.kotechdigitalhub.com/sitemap.xml
