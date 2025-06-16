@@ -1,13 +1,13 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap"); */
 
 @font-face {
-  font-family: 'Figtree Fallback';
+  font-family: "Figtree Fallback";
   size-adjust: 104.5%;
   ascent-override: 90%;
-  src: local('Arial');
+  src: local("Arial");
 }
 body {
-    font-family: 'Figtree', 'Figtree Fallback', sans-serif;
+  font-family: "Figtree", "Figtree Fallback", sans-serif;
 }
 .container {
   max-width: 85% !important;
@@ -18,7 +18,7 @@ a:hover {
 }
 
 ul {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
 }
 ul li {
@@ -3080,7 +3080,6 @@ html {
   font-size: var(--ztc-font-size-font-s12) !important;
 }
 
-
 html {
   overflow-x: hidden !important;
 }
@@ -3104,7 +3103,6 @@ html {
   font-size: var(--ztc-font-size-font-s20);
   color: var(--ztc-bg-bg-1);
 }
-
 
 html {
   overflow-x: hidden !important;
@@ -3130,7 +3128,6 @@ html {
   color: var(--ztc-bg-bg-1);
 }
 
-
 html {
   overflow-x: hidden !important;
 }
@@ -3155,7 +3152,6 @@ html {
   color: var(--ztc-bg-bg-1);
 }
 
-
 html {
   overflow-x: hidden !important;
 }
@@ -3170,7 +3166,6 @@ html {
   opacity: 60%;
 }
 
-
 html {
   overflow-x: hidden !important;
 }
@@ -3184,7 +3179,6 @@ html {
   color: #055346;
   opacity: 60%;
 }
-
 
 html {
   overflow-x: hidden !important;
