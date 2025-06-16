@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "imageCompressor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge:css": "node build-css.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,12 @@
     "url": "https://github.com/Kotech-Digital-Marketing/kotech-marketing-website/issues"
   },
   "homepage": "https://github.com/Kotech-Digital-Marketing/kotech-marketing-website#readme",
-  "description": "",
   "dependencies": {
     "sharp": "^0.34.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "glob": "^11.0.3",
+    "purgecss": "^7.0.2"
   }
 }

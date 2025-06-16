@@ -1,0 +1,62 @@
+{
+  "content": [
+    "./*.html",
+    "./assets/js/main.js"
+  ],
+  "css": ["./assets/css/main.css"],
+  "output": "./assets/css/purged.main.css",
+  "safelist": {
+    "standard": [
+      "sticky",
+      "active",
+      "active-link",
+      "active-progress",
+      "open",
+      "show",
+      "hide",
+      "fade",
+      "collapse",
+      "collapsing",
+      "dropdown-padding",
+      "sr-only",
+      "visually-hidden",
+      "mfp-hide",
+      "aos-init",
+      "aos-animate",
+      "split-line"
+    ],
+    "greedy": [
+      "/^owl-/",
+      "/^slick-/",
+      "/^nice-select/",
+      "/^col-/",
+      "/^container/",
+      "/^nav-/",
+      "/^tab-/",
+      "/^fa-/",
+      "/^aniamtion-key-/",
+      "/^keyframe/"
+    ],
+    "keyframes": [
+      "animation-1",
+      "animation-2",
+      "animation-3",
+      "animation-4",
+      "animation-5",
+      "animation-6",
+      "animation-7",
+      "animation-8",
+      "fade-in-down",
+      "pulse-border",
+      "pulse-border1",
+      "marquee",
+      "marquee-2",
+      "rotate-loading",
+      "progress"
+    ]
+  },
+  "defaultExtractor": {
+    "extensions": ["html", "js"],
+    "regex": "[\\w-/:]+(?<!:)"
+  }
+}
