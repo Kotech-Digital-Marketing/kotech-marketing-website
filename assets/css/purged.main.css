@@ -2927,6 +2927,7 @@ html {
   top: 50px;
   position: absolute;
   transition: all 0.4s;
+  padding-left: 20px !important;
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li a {
   font-family: var(--ztc-family-font1);
@@ -6644,3 +6645,8 @@ html {
 }
 
 /*============= CASE STUDY CSS AREA ENDS ===============*/
+
+
+
+
+  
