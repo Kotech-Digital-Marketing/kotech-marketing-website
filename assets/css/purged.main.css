@@ -4686,6 +4686,13 @@ html {
   height: 565px;
   width: 100%;
 }
+
+.mapouter .gmap_canvas_footer iframe {
+  height: 300px;
+  width: 300px;
+  border: 20px solid black;
+  
+}
 .contact11-section-area .contact-boxarea .input-area .nice-select {
   border-radius: 4px;
   background: #fff;
