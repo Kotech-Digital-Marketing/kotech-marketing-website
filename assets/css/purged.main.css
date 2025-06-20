@@ -1108,7 +1108,7 @@ Location:
   padding: 50px 20px;
   border-radius: 8px;
   min-height: 34.4rem;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 @media (max-width: 767px) {
   .service1-section-area .service-all-boxes-area1 .service-boxarea {
