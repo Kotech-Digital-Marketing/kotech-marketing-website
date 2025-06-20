@@ -2,18 +2,23 @@
 RewriteEngine On
 Options -MultiViews
 
-# 1. Redirect any .html URL to clean version with trailing slash (optional)
-RewriteCond %{THE_REQUEST} \s/([^?]*?)\.html[?\s] [NC]
-RewriteRule ^ %1/ [R=301,L]
+# === REDIRECT /index, /index.html, /index/ → /
+RewriteRule ^index/?$ / [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
 
-# 2. Redirect index.html in any folder to clean folder path
-RewriteRule (^|/)(index)\.html$ /$1 [R=301,L]
+# === Remove .html extension from URL
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
 
-# 3. Internally map clean URL to the .html file
+# === Redirect /about/ → /about (remove trailing slash)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# === Internally rewrite clean URL to .html file
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*?)/?$ $1.html [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
 
-# 4. Custom 404 page
+# === Custom 404 page
 ErrorDocument 404 /404.html
