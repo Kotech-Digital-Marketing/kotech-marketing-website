@@ -1,12 +1,19 @@
-# Enable URL rewriting
+# Enable rewriting
 RewriteEngine On
-
-# Ensure .htaccess works in subdirectories
 Options -MultiViews
 
-# Redirect requests like /about to about.html
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
+# 1. Redirect any .html URL to clean version with trailing slash (optional)
+RewriteCond %{THE_REQUEST} \s/([^?]*?)\.html[?\s] [NC]
+RewriteRule ^ %1/ [R=301,L]
 
-# Custom 404 error page
+# 2. Redirect index.html in any folder to clean folder path
+RewriteRule (^|/)(index)\.html$ /$1 [R=301,L]
+
+# 3. Internally map clean URL to the .html file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+
+# 4. Custom 404 page
 ErrorDocument 404 /404.html
